@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+.header {
+  text-align: center;
+  border-bottom: 3px solid #2c3e50;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #7f8c8d;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-size: 0.95em;
+}
+
+.contact-info span {
+  color: #34495e;
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Perfil */
+.profile-text {
+  text-align: justify;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Experiencia y Educación */
+.item {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-left: 4px solid #3498db;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.item-title {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1.1em;
+}
+
+.item-date {
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+.item-subtitle {
+  color: #3498db;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.item-description {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Habilidades */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.skill-category {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.skill-category h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.skill-category ul {
+  list-style: none;
+}
+
+.skill-category li {
+  color: #555;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.skill-category li:before {
+  content: "•";
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .contact-info {
+    gap: 15px;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
